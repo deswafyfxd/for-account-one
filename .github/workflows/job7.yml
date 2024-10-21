@@ -1,4 +1,4 @@
-name: test
+name: job7
 
 on: 
   workflow_dispatch:
@@ -15,10 +15,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: Set up Python 3.11
-      uses: actions/setup-python@v3
-      with:
-        python-version: "3.11"
+    - name: Debug Time
+      run: date
 
     - name: app
       run: |
